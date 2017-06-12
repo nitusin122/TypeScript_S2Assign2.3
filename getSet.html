@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getterSetter Assignment</title>
+    <script type="text/javascript" src="getSet.js"></script>
+</head>
+<body>
+    <div id="resultDiv"></div>
+    <script type="text/javascript">
+        var checkUser1 = new userRegistration();
+        checkUser1.userName = "New Admin";
+        var checkUser2 = new userRegistration();
+        checkUser2.userName = "Admin";
+        
+        //Check Valid User
+        document.getElementById('resultDiv').innerHTML = checkUser1.checkValidUser().toString();
+        document.getElementById('resultDiv').innerHTML += "<br/>" +checkUser2.checkValidUser().toString();
+    </script>
+</body>
+</html>
